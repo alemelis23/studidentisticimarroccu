@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Studio Dentistico Marroccu, Viale Armando Diaz 76, Cagliari. Tel: 320 911 4704. Trova indicazioni, orari e modulo di contatto.">
+<title>Contatti – Studio Dentistico Marroccu · Viale Diaz 76 Cagliari</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --white:#FFFFFF;--off-white:#F8FAFA;
+  --teal:#2BBFBF;--teal-dark:#1AAFAF;--teal-pale:#E0F5F5;
+  --blue:#1A5F8A;--blue-dark:#0D3A5C;--blue-mid:#1A4A6E;--blue-pale:#E6F2F8;
+  --ink:#0D2D42;--ink-mid:#3A5268;--ink-light:#7A95A8;
+  --border:#D8E8EE;--border-light:#EBF3F7;
+  --r:12px;--r-lg:20px;--r-xl:32px;
+  --ease:cubic-bezier(.25,.46,.45,.94);--max:1160px;
+}
+html{scroll-behavior:smooth;font-size:16px;-webkit-text-size-adjust:100%}
+body{font-family:'Jost',sans-serif;color:var(--ink);background:var(--white);line-height:1.7;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:'Cormorant Garamond',serif;letter-spacing:-.01em}
+h1{font-size:clamp(2.4rem,6vw,4rem);font-weight:400;line-height:1.1;color:var(--ink)}
+h2{font-size:clamp(1.8rem,4vw,2.8rem);font-weight:400;line-height:1.14;color:var(--ink)}
+h3{font-size:clamp(1.1rem,2.5vw,1.4rem);font-weight:400;line-height:1.25;color:var(--ink)}
+.eyebrow{font-size:.68rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-light);display:block;margin-bottom:14px}
+.nav{position:sticky;top:0;z-index:200;background:rgba(255,255,255,.97);border-bottom:1px solid var(--border-light);backdrop-filter:blur(12px)}
+.nav-inner{max-width:var(--max);margin:0 auto;padding:0 24px;height:68px;display:flex;align-items:center;justify-content:space-between}
+.nav-logo{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:400;color:var(--ink);letter-spacing:.02em;line-height:1.2}
+.nav-logo small{display:block;font-family:'Jost',sans-serif;font-size:.58rem;font-weight:400;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-light);margin-top:2px}
+.nav-links{display:flex;gap:32px;list-style:none}
+.nav-links a{font-size:.72rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-mid);transition:color .2s;position:relative;padding-bottom:3px}
+.nav-links a::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:var(--ink);transform:scaleX(0);transition:transform .25s var(--ease);transform-origin:left}
+.nav-links a:hover,.nav-links a.active{color:var(--ink)}
+.nav-links a:hover::after,.nav-links a.active::after{transform:scaleX(1)}
+.nav-actions{display:flex;align-items:center;gap:14px}
+.nav-tel{font-size:.72rem;font-weight:500;letter-spacing:.08em;color:var(--ink-mid);display:flex;align-items:center;gap:6px;transition:color .2s}
+.nav-tel:hover{color:var(--ink)}
+.btn-nav{padding:9px 20px;background:var(--ink);color:var(--white);border-radius:2px;font-size:.7rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;border:1px solid var(--ink);transition:all .2s}
+.btn-nav:hover{background:var(--blue)}
+.nav-hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:6px}
+.nav-hamburger span{width:22px;height:1px;background:var(--ink);display:block}
+.nav-mobile{display:none;position:fixed;inset:0;background:var(--ink);z-index:500;flex-direction:column;justify-content:center;align-items:center;gap:6px;padding:40px 24px}
+.nav-mobile.open{display:flex}
+.nav-mobile a{font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:300;color:rgba(255,255,255,.8);padding:10px 0;transition:color .2s;text-align:center}
+.nav-mobile a:hover{color:var(--white)}
+.nav-mobile-close{position:absolute;top:24px;right:24px;background:none;border:none;color:rgba(255,255,255,.5);font-size:1.4rem;cursor:pointer;line-height:1;padding:8px}
+.nav-mobile-tel{margin-top:32px;font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.3)}
+/* PAGE HERO */
+.page-hero{padding:72px 0 80px;border-bottom:1px solid var(--border-light)}
+.breadcrumb{display:flex;align-items:center;gap:8px;font-size:.65rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-light);margin-bottom:32px}
+.breadcrumb a:hover{color:var(--ink)}
+.breadcrumb-sep{color:var(--border)}
+/* CONTATTI MAIN */
+.contatti-main{padding:96px 0}
+.contatti-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+/* INFO COLUMN */
+.info-rows{display:flex;flex-direction:column;gap:0;border-top:1px solid var(--border-light);margin-bottom:36px}
+.ir-item{display:flex;gap:20px;padding:22px 0;border-bottom:1px solid var(--border-light);align-items:flex-start}
+.ir-ico{width:44px;height:44px;border-radius:10px;background:var(--blue-pale);display:flex;align-items:center;justify-content:center;font-size:.95rem;flex-shrink:0;margin-top:2px}
+.ir-label{font-size:.62rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-light);margin-bottom:5px}
+.ir-val{font-size:.97rem;font-weight:400;color:var(--ink);line-height:1.4}
+.ir-sub{font-size:.82rem;font-weight:300;color:var(--ink-mid);margin-top:3px}
+.ir-val a{transition:color .2s}
+.ir-val a:hover{color:var(--teal)}
+/* ORARI */
+.orari-box{background:var(--off-white);border:1px solid var(--border-light);border-radius:var(--r-lg);padding:28px;margin-bottom:28px}
+.ob-title{font-size:.62rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-light);margin-bottom:16px}
+.ob-rows{display:flex;flex-direction:column;gap:0}
+.ob-row{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid var(--border-light);font-size:.86rem}
+.ob-row:last-child{border-bottom:none}
+.ob-day{font-weight:300;color:var(--ink-mid)}
+.ob-time{font-weight:400;color:var(--ink)}
+.ob-closed{font-weight:300;color:var(--ink-light);font-style:italic}
+.ob-note{font-size:.75rem;font-weight:300;color:var(--ink-light);margin-top:14px;padding-top:14px;border-top:1px solid var(--border-light);line-height:1.6}
+/* SOCIAL */
+.social-strip{display:flex;gap:10px}
+.s-link{display:flex;align-items:center;gap:10px;padding:12px 18px;border:1px solid var(--border);border-radius:2px;font-size:.72rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-mid);transition:all .25s}
+.s-link:hover{background:var(--ink);color:var(--white);border-color:var(--ink)}
+/* MAPPA */
+.map-wrap{background:var(--off-white);border:1px solid var(--border-light);border-radius:var(--r-lg);overflow:hidden}
+.map-ph{height:300px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;color:var(--ink-light);font-size:.84rem}
+.map-ph-ico{width:52px;height:52px;border-radius:50%;background:var(--blue-pale);display:flex;align-items:center;justify-content:center;font-size:1.3rem;margin-bottom:6px}
+.map-foot{padding:20px 24px;background:var(--white);border-top:1px solid var(--border-light);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.mf-addr{font-size:.84rem;font-weight:300;color:var(--ink-mid)}
+.mf-addr strong{display:block;font-weight:500;color:var(--ink);margin-bottom:2px}
+.mf-out{font-size:.7rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--teal)}
+.mf-out:hover{text-decoration:underline;text-underline-offset:2px}
+/* FORM CONTATTO */
+.form-section{background:var(--off-white);padding:88px 0}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+.fg-info h2{margin-bottom:16px}
+.fg-info p{font-size:.95rem;font-weight:300;color:var(--ink-mid);line-height:1.82;margin-bottom:28px}
+.fg-trust{display:flex;flex-direction:column;gap:12px}
+.fgt-item{display:flex;align-items:center;gap:12px;font-size:.86rem;font-weight:300;color:var(--ink-mid)}
+.fgt-ico{width:34px;height:34px;border-radius:8px;background:var(--white);border:1px solid var(--border-light);display:flex;align-items:center;justify-content:center;font-size:.85rem;flex-shrink:0}
+.form-card{background:var(--white);border:1px solid var(--border-light);border-radius:var(--r-lg);padding:36px;box-shadow:0 4px 24px rgba(13,27,42,.05)}
+.f-row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.f-g{margin-bottom:14px}
+.f-lbl{display:block;font-size:.62rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-light);margin-bottom:7px}
+.f-inp,.f-ta{width:100%;padding:13px 16px;background:var(--off-white);border:1px solid var(--border-light);border-radius:4px;color:var(--ink);font-family:'Jost',sans-serif;font-size:.88rem;font-weight:300;outline:none;transition:border-color .2s;-webkit-appearance:none}
+.f-inp::placeholder,.f-ta::placeholder{color:var(--ink-light)}
+.f-inp:focus,.f-ta:focus{border-color:var(--teal);background:var(--white)}
+.f-ta{resize:vertical;min-height:100px}
+.f-priv{display:flex;gap:10px;font-size:.76rem;font-weight:300;color:var(--ink-light);line-height:1.55;margin:4px 0 18px;align-items:flex-start}
+.f-priv input{margin-top:3px;accent-color:var(--teal);flex-shrink:0}
+.f-priv a{color:var(--teal);text-decoration:none}
+.f-priv a:hover{text-decoration:underline}
+.f-btn{width:100%;padding:14px;background:var(--ink);color:var(--white);font-family:'Jost',sans-serif;font-size:.78rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;border:none;border-radius:2px;cursor:pointer;transition:all .3s}
+.f-btn:hover{background:var(--blue);transform:translateY(-1px)}
+/* FOOTER */
+.footer{background:var(--ink);color:rgba(255,255,255,.5);padding:72px 0 32px;border-top:1px solid rgba(255,255,255,.04)}
+.footer-top{display:grid;grid-template-columns:1.8fr 1fr 1fr;gap:60px;padding-bottom:56px;border-bottom:1px solid rgba(255,255,255,.06);margin-bottom:28px}
+.footer-brand{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:400;color:var(--white);margin-bottom:5px}
+.footer-brand-sub{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:18px;font-weight:400}
+.footer-desc{font-size:.82rem;font-weight:300;line-height:1.78;color:rgba(255,255,255,.4);max-width:280px;margin-bottom:24px}
+.footer-socials{display:flex;gap:8px}
+.footer-social{width:34px;height:34px;border-radius:4px;border:1px solid rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:500;color:rgba(255,255,255,.5);transition:all .25s}
+.footer-social:hover{background:rgba(43,191,191,.15);color:var(--teal);border-color:rgba(43,191,191,.3)}
+.footer-col-title{font-size:.6rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:20px}
+.footer-links{list-style:none;display:flex;flex-direction:column;gap:10px}
+.footer-links a{font-size:.83rem;font-weight:300;color:rgba(255,255,255,.5);transition:color .2s}
+.footer-links a:hover{color:var(--teal)}
+.footer-contacts-list{display:flex;flex-direction:column;gap:11px}
+.fc-row{display:flex;gap:10px;font-size:.81rem;font-weight:300;color:rgba(255,255,255,.5);line-height:1.5;align-items:flex-start}
+.fc-row a{color:inherit;transition:color .2s}
+.fc-row a:hover{color:var(--white)}
+.fc-ico{opacity:.4;min-width:14px;font-size:.82rem;margin-top:2px}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;font-size:.7rem;font-weight:300;color:rgba(255,255,255,.25)}
+.footer-legal{display:flex;gap:20px}
+.footer-legal a{color:rgba(255,255,255,.25);transition:color .2s}
+.footer-legal a:hover{color:rgba(255,255,255,.6)}
+@media(max-width:900px){.contatti-grid,.form-grid{grid-template-columns:1fr}.footer-top{grid-template-columns:1fr;gap:32px}.social-strip{flex-wrap:wrap}}
+@media(max-width:768px){.nav-links,.nav-tel,.btn-nav{display:none}.nav-hamburger{display:flex}.f-row2{grid-template-columns:1fr}}
+@media(max-width:600px){.wrap{padding:0 18px}h1{font-size:2.1rem}h2{font-size:1.75rem}.form-card{padding:26px 20px}.footer-bottom{flex-direction:column;align-items:flex-start}.footer-legal{flex-wrap:wrap;gap:12px}}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html"><svg style="height:38px;width:auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 56">
+  <path d="M18 3C11 3 6 8 6 13c0 5 1.5 10 3 14 1.5 4 3 8 5 8s2-4 4-8c1 4 2 8 4 8s2.5-4 4-8c1.5-4 3-9 3-14C29 8 24 3 18 3z" fill="#2BBFBF"/>
+  <text x="38" y="28" font-family="Jost,sans-serif" font-size="19" font-weight="600" fill="#1A5F8A" letter-spacing=".3">marroccu</text>
+  <text x="38" y="42" font-family="Jost,sans-serif" font-size="10" font-weight="400" fill="#2BBFBF" letter-spacing="1.8">studi dentistici</text>
+</svg></a>
+    <ul class="nav-links">
+      <li><a href="studio.html">Lo Studio</a></li><li><a href="team.html">Il Team</a></li>
+      <li><a href="trattamenti.html">Trattamenti</a></li><li><a href="recensioni.html">Recensioni</a></li>
+      <li><a href="contatti.html" class="active">Contatti</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="tel:3209114704" class="nav-tel">&#128222; 320 911 4704</a>
+      <a href="prenota.html" class="btn-nav">Prenota</a>
+      <button class="nav-hamburger" onclick="openMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<div class="nav-mobile" id="mobileMenu">
+  <button class="nav-mobile-close" onclick="closeMenu()">&#10005;</button>
+  <a href="studio.html" onclick="closeMenu()">Lo Studio</a><a href="team.html" onclick="closeMenu()">Il Team</a>
+  <a href="trattamenti.html" onclick="closeMenu()">Trattamenti</a><a href="recensioni.html" onclick="closeMenu()">Recensioni</a>
+  <a href="contatti.html" onclick="closeMenu()">Contatti</a><a href="prenota.html" onclick="closeMenu()">Prenota</a>
+  <div class="nav-mobile-tel">320 911 4704</div>
+</div>
+
+<div class="page-hero">
+  <div class="wrap">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a><span class="breadcrumb-sep">/</span><span>Contatti</span>
+    </div>
+    <div style="max-width:600px">
+      <span class="eyebrow">Dove siamo</span>
+      <h1>Vieni a trovarci a Cagliari</h1>
+      <p style="font-size:1rem;font-weight:300;color:var(--ink-mid);line-height:1.82;margin-top:20px;max-width:500px">Siamo in Viale Armando Diaz 76, nel cuore di Cagliari. Puoi chiamarci, compilare il modulo o venire direttamente in studio. Da luned&igrave; alle 9:00.</p>
+    </div>
+  </div>
+</div>
+
+<section class="contatti-main" style="padding:88px 0">
+  <div class="wrap">
+    <div class="contatti-grid">
+      <div>
+        <span class="eyebrow" style="margin-bottom:32px">Informazioni</span>
+        <div class="info-rows">
+          <div class="ir-item">
+            <div class="ir-ico">&#128205;</div>
+            <div><div class="ir-label">Indirizzo</div><div class="ir-val">Viale Armando Diaz, 76</div><div class="ir-sub">09125 Cagliari (CA) &middot; Sardegna, Italia</div></div>
+          </div>
+          <div class="ir-item">
+            <div class="ir-ico">&#128222;</div>
+            <div><div class="ir-label">Telefono</div><div class="ir-val"><a href="tel:3209114704">320 911 4704</a></div><div class="ir-sub">Prenotazioni, informazioni e urgenze</div></div>
+          </div>
+          <div class="ir-item">
+            <div class="ir-ico">&#11088;</div>
+            <div><div class="ir-label">Reputazione verificata</div><div class="ir-val">5,0 &middot; Google &amp; MioDottore</div><div class="ir-sub">112 + 24 recensioni a cinque stelle</div></div>
+          </div>
+        </div>
+        <div class="orari-box">
+          <div class="ob-title">Orari di apertura</div>
+          <div class="ob-rows">
+            <div class="ob-row"><span class="ob-day">Luned&igrave;</span><span class="ob-time">09:00 &mdash; da confermare</span></div>
+            <div class="ob-row"><span class="ob-day">Marted&igrave;</span><span class="ob-time">Da confermare</span></div>
+            <div class="ob-row"><span class="ob-day">Mercoled&igrave;</span><span class="ob-time">Da confermare</span></div>
+            <div class="ob-row"><span class="ob-day">Gioved&igrave;</span><span class="ob-time">Da confermare</span></div>
+            <div class="ob-row"><span class="ob-day">Venerd&igrave;</span><span class="ob-time">Da confermare</span></div>
+            <div class="ob-row"><span class="ob-day">Sabato</span><span class="ob-closed">Da confermare</span></div>
+            <div class="ob-row"><span class="ob-day">Domenica</span><span class="ob-closed">Chiuso</span></div>
+          </div>
+          <div class="ob-note">Per gli orari aggiornati e le urgenze, contattaci al <a href="tel:3209114704" style="color:var(--teal)">320 911 4704</a>. Gli orari completi verranno aggiornati con i dati del cliente.</div>
+        </div>
+        <div class="social-strip">
+          <a href="#" class="s-link"><span>f</span> Facebook</a>
+          <a href="#" class="s-link"><span>ig</span> Instagram</a>
+        </div>
+      </div>
+      <div>
+        <div class="map-wrap">
+          <div class="map-ph">
+            <div class="map-ph-ico">&#128205;</div>
+            <strong style="color:var(--ink);font-size:.9rem">Studi Dentistici Marroccu</strong>
+            <span>Viale Armando Diaz, 76 &middot; Cagliari</span>
+            <span style="font-size:.75rem">Inserire Google Maps embed qui</span>
+          </div>
+          <div class="map-foot">
+            <div class="mf-addr"><strong>Studi Dentistici Marroccu</strong>Viale Armando Diaz, 76 &middot; 09125 Cagliari</div>
+            <a href="https://maps.google.com/?q=Viale+Armando+Diaz+76+Cagliari" target="_blank" rel="noopener" class="mf-out">Apri Maps &#8594;</a>
+          </div>
+        </div>
+        <div style="margin-top:20px;padding:20px 24px;background:var(--blue-pale);border-radius:var(--r);border:1px solid rgba(74,141,181,.15)">
+          <div style="font-size:.65rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);margin-bottom:8px">Come raggiungerci</div>
+          <p style="font-size:.86rem;font-weight:300;color:var(--ink-mid);line-height:1.72">Lo studio &egrave; in Viale Armando Diaz, una delle arterie principali di Cagliari, raggiungibile in auto e con i mezzi pubblici. Per indicazioni precise, chiama il <a href="tel:3209114704" style="color:var(--teal);font-weight:500">320 911 4704</a>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="form-section">
+  <div class="wrap">
+    <div class="form-grid">
+      <div class="fg-info">
+        <span class="eyebrow">Scrivici</span>
+        <h2>Hai una domanda? Siamo qui.</h2>
+        <p>Compila il modulo per qualsiasi informazione o per un primo contatto. Risponderemo al pi&ugrave; presto, di solito entro lo stesso giorno lavorativo.</p>
+        <div class="fg-trust">
+          <div class="fgt-item"><div class="fgt-ico">&#9889;</div><span>Risposta rapida, di solito entro lo stesso giorno</span></div>
+          <div class="fgt-item"><div class="fgt-ico">&#128274;</div><span>Dati trattati in sicurezza e non ceduti a terzi</span></div>
+          <div class="fgt-item"><div class="fgt-ico">&#129309;</div><span>Nessun obbligo: il primo contatto &egrave; libero</span></div>
+          <div class="fgt-item"><div class="fgt-ico">&#128222;</div><span>Preferisci chiamare? <a href="tel:3209114704" style="color:var(--teal);font-weight:500">320 911 4704</a></span></div>
+        </div>
+      </div>
+      <div class="form-card">
+        <div class="f-row2">
+          <div class="f-g"><label class="f-lbl" for="cn">Nome *</label><input type="text" id="cn" class="f-inp" placeholder="Mario"></div>
+          <div class="f-g"><label class="f-lbl" for="cc">Cognome *</label><input type="text" id="cc" class="f-inp" placeholder="Rossi"></div>
+        </div>
+        <div class="f-g"><label class="f-lbl" for="ct">Telefono *</label><input type="tel" id="ct" class="f-inp" placeholder="+39 320 000 0000"></div>
+        <div class="f-g"><label class="f-lbl" for="ce">Email</label><input type="email" id="ce" class="f-inp" placeholder="mario@email.it"></div>
+        <div class="f-g"><label class="f-lbl" for="cm">Messaggio *</label><textarea id="cm" class="f-ta" placeholder="Scrivici la tua domanda o richiesta..."></textarea></div>
+        <div class="f-priv"><input type="checkbox" id="cp"><label for="cp">Ho letto e accetto la <a href="privacy.html">Privacy Policy</a> e acconsento al trattamento dei miei dati.</label></div>
+        <button class="f-btn" onclick="submitContact()">Invia messaggio &#8594;</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <svg style="height:34px;width:auto;opacity:.65" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 56">
+  <path d="M18 3C11 3 6 8 6 13c0 5 1.5 10 3 14 1.5 4 3 8 5 8s2-4 4-8c1 4 2 8 4 8s2.5-4 4-8c1.5-4 3-9 3-14C29 8 24 3 18 3z" fill="#2BBFBF"/>
+  <text x="38" y="28" font-family="Jost,sans-serif" font-size="19" font-weight="600" fill="rgba(255,255,255,.7)" letter-spacing=".3">marroccu</text>
+  <text x="38" y="42" font-family="Jost,sans-serif" font-size="10" font-weight="400" fill="#2BBFBF" letter-spacing="1.8">studi dentistici</text>
+</svg>
+        <p class="footer-desc">Oltre quarant&apos;anni di storia in Sardegna. Professionalit&agrave;, cura e continuit&agrave; al servizio dei pazienti dal 1983.</p>
+        <div class="footer-socials"><a href="#" class="footer-social">f</a><a href="#" class="footer-social">ig</a></div>
+      </div>
+      <div>
+        <div class="footer-col-title">Navigazione</div>
+        <ul class="footer-links">
+          <li><a href="studio.html">Lo Studio</a></li><li><a href="team.html">Il Team</a></li>
+          <li><a href="trattamenti.html">Trattamenti</a></li><li><a href="recensioni.html">Recensioni</a></li>
+          <li><a href="prenota.html">Prenota</a></li><li><a href="contatti.html">Contatti</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Contatti</div>
+        <div class="footer-contacts-list">
+          <div class="fc-row"><span class="fc-ico">&#128205;</span><span>Viale Armando Diaz, 76<br>09125 Cagliari (CA)</span></div>
+          <div class="fc-row"><span class="fc-ico">&#128222;</span><a href="tel:3209114704">320 911 4704</a></div>
+          <div class="fc-row"><span class="fc-ico">&#128336;</span><span>Da luned&igrave; &middot; ore 9:00</span></div>
+          <div class="fc-row"><span class="fc-ico">&#11088;</span><span>5,0/5 &middot; 136 recensioni</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2024 Studi Dentistici Marroccu &middot; P.IVA da inserire</span>
+      <div class="footer-legal"><a href="privacy.html">Privacy Policy</a><a href="cookie.html">Cookie Policy</a><a href="#">Note legali</a></div>
+    </div>
+  </div>
+</footer>
+<script>
+function openMenu(){document.getElementById('mobileMenu').classList.add('open');document.body.style.overflow='hidden'}
+function closeMenu(){document.getElementById('mobileMenu').classList.remove('open');document.body.style.overflow=''}
+function submitContact(){
+  var n=document.getElementById('cn').value.trim();
+  var t=document.getElementById('ct').value.trim();
+  var m=document.getElementById('cm').value.trim();
+  var p=document.getElementById('cp');
+  if(!n){alert('Inserisci il tuo nome.');return}
+  if(!t){alert('Inserisci il tuo telefono.');return}
+  if(!m){alert('Scrivi un messaggio.');return}
+  if(!p.checked){alert('Accetta la Privacy Policy.');return}
+  alert('Grazie '+n+'! Il tuo messaggio è stato inviato. Ti risponderemo al più presto.');
+}
+</script>
+</body>
+</html>

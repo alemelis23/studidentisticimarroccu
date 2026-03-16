@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="112 recensioni 5 stelle su Google, 24 su MioDottore. Scopri cosa dicono i pazienti dello Studio Dentistico Marroccu di Cagliari.">
+<title>Recensioni – Studio Dentistico Marroccu Cagliari 5 Stelle</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ============================================
+   MARROCCU DENTAL — DESIGN SYSTEM v2
+   Premium · Editorial · Mobile-first
+============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Outfit:wght@300;400;500;600&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  /* Palette — Ivory, Slate, Ink */
+  --ink:        #0F1923;
+  --ink-70:     rgba(15,25,35,0.70);
+  --ink-40:     rgba(15,25,35,0.40);
+  --ink-15:     rgba(15,25,35,0.15);
+  --ink-06:     rgba(15,25,35,0.06);
+  --slate:      #2A4A6B;
+  --slate-mid:  #3A6494;
+  --slate-soft: #EBF2FA;
+  --ivory:      #F9F7F4;
+  --ivory-dark: #F0EDE8;
+  --white:      #FFFFFF;
+  --gold:       #B8935A;
+  --gold-light: #F5EDD9;
+  --border:     rgba(15,25,35,0.10);
+  --border-strong: rgba(15,25,35,0.18);
+
+  /* Type scale */
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body:    'Outfit', system-ui, sans-serif;
+
+  /* Spacing */
+  --section-pad: clamp(64px, 8vw, 112px);
+  --container:   1200px;
+  --radius-sm:   8px;
+  --radius:      16px;
+  --radius-lg:   24px;
+  --radius-xl:   32px;
+
+  /* Motion */
+  --ease-out:  cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in:   cubic-bezier(0.4, 0, 1, 1);
+  --dur:       0.45s;
+}
+
+html { scroll-behavior: smooth; font-size: 16px; -webkit-text-size-adjust: 100%; }
+body {
+  font-family: var(--font-body);
+  color: var(--ink);
+  background: var(--white);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ---- LAYOUT ---- */
+.wrap     { max-width: var(--container); margin: 0 auto; padding: 0 clamp(20px, 5vw, 48px); }
+.section  { padding: var(--section-pad) 0; }
+.section--ivory { background: var(--ivory); }
+.section--dark  { background: var(--ink); color: var(--white); }
+.section--slate { background: var(--slate); color: var(--white); }
+
+/* ---- TYPOGRAPHY ---- */
+.label {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--teal);
+  display: block;
+  margin-bottom: 14px;
+}
+.label--light { color: rgba(255,255,255,0.5); }
+
+h1, .h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2.6rem, 6vw, 5rem);
+  font-weight: 300;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+h2, .h2 {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  font-weight: 300;
+  line-height: 1.12;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+}
+h3, .h3 {
+  font-family: var(--font-display);
+  font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--ink);
+}
+h4, .h4 {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.display-italic { font-style: italic; color: var(--slate-mid); }
+
+p { color: var(--ink-70); line-height: 1.75; }
+.lead { font-size: clamp(1rem, 1.5vw, 1.15rem); line-height: 1.8; color: var(--ink-70); }
+
+/* ---- BUTTONS ---- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  border-radius: 100px;
+  padding: 13px 28px;
+  transition: all var(--dur) var(--ease-out);
+  cursor: pointer;
+  border: none;
+  white-space: nowrap;
+  -webkit-tap-highlight-color: transparent;
+}
+.btn--dark {
+  background: var(--ink);
+  color: var(--white);
+}
+.btn--dark:hover { background: var(--slate); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(15,25,35,0.22); }
+
+.btn--outline {
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid var(--border-strong);
+}
+.btn--outline:hover { border-color: var(--ink); background: var(--ink-06); transform: translateY(-2px); }
+
+.btn--ghost-white {
+  background: rgba(255,255,255,0.1);
+  color: var(--white);
+  border: 1px solid rgba(255,255,255,0.25);
+}
+.btn--ghost-white:hover { background: rgba(255,255,255,0.18); transform: translateY(-2px); }
+
+.btn--white {
+  background: var(--white);
+  color: var(--ink);
+  border: 1px solid transparent;
+}
+.btn--white:hover { background: var(--ivory); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(15,25,35,0.14); }
+
+.btn-arrow { font-size: 1rem; transition: transform 0.3s var(--ease-out); }
+.btn:hover .btn-arrow { transform: translateX(4px); }
+
+/* ---- NAV ---- */
+.nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 500;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  transition: background 0.4s ease, box-shadow 0.4s ease;
+}
+.nav.scrolled {
+  background: rgba(255,255,255,0.97);
+  box-shadow: 0 1px 0 var(--border);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+.nav-inner {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 clamp(20px, 5vw, 48px);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.nav-logo {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: var(--ink);
+  text-decoration: none;
+  letter-spacing: -0.01em;
+  line-height: 1;
+  flex-shrink: 0;
+}
+.nav-logo small {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 0.62rem;
+  font-weight: 400;
+  color: var(--ink-40);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-top: 3px;
+}
+.nav-links {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+.nav-links a {
+  font-size: 0.82rem;
+  font-weight: 400;
+  color: var(--ink-70);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  transition: color 0.2s;
+  position: relative;
+}
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -3px; left: 0; right: 0;
+  height: 1px;
+  background: var(--teal);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s var(--ease-out);
+}
+.nav-links a:hover, .nav-links a.active { color: var(--ink); }
+.nav-links a:hover::after, .nav-links a.active::after { transform: scaleX(1); }
+
+.nav-cta { display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
+.nav-tel {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--ink-70);
+  text-decoration: none;
+  transition: color 0.2s;
+  display: none;
+}
+.nav-tel:hover { color: var(--ink); }
+.nav-tel.show { display: block; }
+
+/* Hamburger */
+.nav-burger {
+  display: none;
+  width: 40px; height: 40px;
+  border-radius: 10px;
+  background: var(--ink-06);
+  border: none;
+  cursor: pointer;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  -webkit-tap-highlight-color: transparent;
+}
+.nav-burger span {
+  display: block;
+  width: 18px; height: 1.5px;
+  background: var(--ink);
+  border-radius: 2px;
+  transition: all 0.3s var(--ease-out);
+}
+.nav-burger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+.nav-burger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+.nav-burger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+/* Mobile menu */
+.nav-mobile {
+  position: fixed;
+  top: 72px; left: 0; right: 0; bottom: 0;
+  background: var(--white);
+  z-index: 499;
+  padding: 32px clamp(20px, 5vw, 48px);
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  overflow-y: auto;
+  transform: translateY(-8px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s var(--ease-out);
+}
+.nav-mobile.open {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+.nav-mobile a {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 300;
+  color: var(--ink);
+  text-decoration: none;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border);
+  transition: color 0.2s;
+}
+.nav-mobile a:hover { color: var(--slate-mid); }
+.nav-mobile .nav-mobile-cta {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.nav-mobile .nav-mobile-cta .btn { justify-content: center; font-size: 0.95rem; padding: 15px; }
+
+/* ---- PAGE HEADER ---- */
+.page-header {
+  padding: calc(72px + clamp(48px,7vw,96px)) 0 clamp(48px,7vw,88px);
+  position: relative;
+  overflow: hidden;
+}
+.page-header--ivory { background: var(--ivory); }
+.page-header--dark { background: var(--ink); }
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.75rem;
+  color: var(--ink-40);
+  margin-bottom: 24px;
+}
+.breadcrumb a { color: inherit; text-decoration: none; transition: color 0.2s; }
+.breadcrumb a:hover { color: var(--teal); }
+.breadcrumb-sep { color: var(--ink-15); }
+
+/* ---- DIVIDERS ---- */
+.rule { border: none; border-top: 1px solid var(--border); margin: 0; }
+.rule--strong { border-color: var(--border-strong); }
+
+/* ---- FORMS ---- */
+.field { margin-bottom: 16px; }
+.field-label {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-40);
+  margin-bottom: 7px;
+}
+.field-label--light { color: rgba(255,255,255,0.45); }
+.field-input, .field-select, .field-textarea {
+  width: 100%;
+  padding: 13px 16px;
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  color: var(--ink);
+  background: var(--white);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  -webkit-appearance: none;
+}
+.field-input:focus, .field-select:focus, .field-textarea:focus {
+  border-color: var(--slate-mid);
+  box-shadow: 0 0 0 3px rgba(58,100,148,0.10);
+}
+.field-input::placeholder, .field-textarea::placeholder { color: var(--ink-40); }
+.field-input--dark, .field-select--dark, .field-textarea--dark {
+  background: rgba(255,255,255,0.06);
+  border-color: rgba(255,255,255,0.15);
+  color: var(--white);
+}
+.field-input--dark::placeholder, .field-textarea--dark::placeholder { color: rgba(255,255,255,0.3); }
+.field-input--dark:focus, .field-select--dark:focus, .field-textarea--dark:focus {
+  border-color: rgba(255,255,255,0.4);
+  box-shadow: 0 0 0 3px rgba(255,255,255,0.06);
+}
+.field-select--dark option { background: var(--ink); color: var(--white); }
+.field-textarea { resize: vertical; min-height: 100px; line-height: 1.6; }
+.field-check {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  font-size: 0.8rem;
+  color: var(--ink-70);
+  line-height: 1.55;
+}
+.field-check--light { color: rgba(255,255,255,0.5); }
+.field-check input { margin-top: 2px; flex-shrink: 0; accent-color: var(--slate-mid); }
+.field-check a { color: var(--slate-mid); }
+.field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+/* ---- REVIEW STARS ---- */
+.stars { color: var(--teal); letter-spacing: 2px; font-size: 0.78rem; }
+
+/* ---- FOOTER ---- */
+.footer {
+  background: var(--ink);
+  color: rgba(255,255,255,0.55);
+  padding: 72px 0 32px;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr 1fr;
+  gap: 56px;
+  padding-bottom: 56px;
+  margin-bottom: 32px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.footer-brand {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: var(--white);
+  margin-bottom: 5px;
+  line-height: 1;
+}
+.footer-brand-sub {
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 18px;
+  display: block;
+}
+.footer-bio {
+  font-size: 0.85rem;
+  line-height: 1.72;
+  color: rgba(255,255,255,0.45);
+  margin-bottom: 24px;
+  max-width: 300px;
+}
+.footer-social { display: flex; gap: 8px; }
+.footer-soc-btn {
+  width: 34px; height: 34px;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.12);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.5);
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.footer-soc-btn:hover { border-color: rgba(255,255,255,0.3); color: var(--white); background: rgba(255,255,255,0.06); }
+.footer-col-title {
+  font-size: 0.67rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.35);
+  margin-bottom: 20px;
+}
+.footer-col-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.footer-col-links a {
+  font-size: 0.88rem;
+  color: rgba(255,255,255,0.55);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-col-links a:hover { color: var(--white); }
+.footer-contact-list { display: flex; flex-direction: column; gap: 11px; }
+.fci {
+  display: flex; gap: 10px;
+  font-size: 0.84rem;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.45;
+  align-items: flex-start;
+}
+.fci-icon { opacity: 0.5; font-size: 0.85rem; min-width: 16px; margin-top: 2px; }
+.fci a { color: inherit; text-decoration: none; transition: color 0.2s; }
+.fci a:hover { color: var(--white); }
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 0.74rem;
+  color: rgba(255,255,255,0.28);
+}
+.footer-legal { display: flex; gap: 20px; flex-wrap: wrap; }
+.footer-legal a { color: inherit; text-decoration: none; transition: color 0.2s; }
+.footer-legal a:hover { color: rgba(255,255,255,0.65); }
+
+/* ---- ANIMATIONS ---- */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+.anim-up  { animation: fadeUp  0.7s var(--ease-out) both; }
+.anim-in  { animation: fadeIn  0.6s ease both; }
+[data-delay="1"] { animation-delay: 0.1s; }
+[data-delay="2"] { animation-delay: 0.2s; }
+[data-delay="3"] { animation-delay: 0.35s; }
+[data-delay="4"] { animation-delay: 0.5s; }
+[data-delay="5"] { animation-delay: 0.65s; }
+
+/* ---- RESPONSIVE ---- */
+@media (max-width: 1024px) {
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .footer-grid > *:first-child { grid-column: 1 / -1; }
+  .footer-bio { max-width: 100%; }
+}
+@media (max-width: 768px) {
+  .nav-links, .nav-tel.show { display: none; }
+  .nav-burger { display: flex; }
+  .footer-grid { grid-template-columns: 1fr; gap: 36px; }
+  .footer-grid > *:first-child { grid-column: auto; }
+  .field-row { grid-template-columns: 1fr; }
+}
+@media (max-width: 480px) {
+  .footer-bottom { flex-direction: column; align-items: flex-start; }
+}
+
+/* ---- SHARED COMPONENTS ---- */
+/* Inline trust bar (no giant numbers) */
+.trust-strip {
+  background: var(--ivory-dark);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 14px 0;
+}
+.trust-strip-inner {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.trust-strip-inner::-webkit-scrollbar { display: none; }
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 28px;
+  border-right: 1px solid var(--border);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.trust-item:last-child { border-right: none; }
+.trust-item-label { font-size: 0.8rem; color: var(--ink-70); }
+.trust-item-label strong { font-weight: 600; color: var(--ink); }
+
+/* Section eyebrow + title pattern */
+.section-head { margin-bottom: clamp(40px, 5vw, 64px); }
+.section-head--center { text-align: center; }
+.section-head--center .lead { margin: 16px auto 0; max-width: 560px; }
+.section-head .lead { margin-top: 16px; max-width: 560px; }
+
+/* CTA band */
+.cta-band {
+  background: var(--ink);
+  padding: clamp(56px, 7vw, 88px) 0;
+  position: relative;
+  overflow: hidden;
+}
+.cta-band::before {
+  content: '';
+  position: absolute;
+  right: -10%; top: -50%;
+  width: 60%; height: 200%;
+  background: radial-gradient(ellipse at center, rgba(58,100,148,0.2) 0%, transparent 65%);
+  pointer-events: none;
+}
+.cta-band-inner { position: relative; z-index: 1; }
+.cta-band h2 { color: var(--white); }
+.cta-band .lead { color: rgba(255,255,255,0.6); margin-top: 16px; }
+.cta-band-btns { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 36px; }
+
+@media (max-width: 480px) {
+  .trust-item { padding: 0 16px; }
+  .cta-band-btns { flex-direction: column; }
+  .cta-band-btns .btn { justify-content: center; }
+}
+
+.page-header { background: var(--ivory); padding: calc(72px + clamp(48px,7vw,88px)) 0 clamp(48px,6vw,80px); }
+.ph-rating { display: flex; align-items: baseline; gap: 12px; margin-top: 24px; }
+.ph-rating-num { font-family: var(--font-display); font-size: clamp(3rem,7vw,5.5rem); font-weight: 300; color: var(--ink); line-height: 1; letter-spacing: -0.03em; }
+.ph-rating-right .stars { font-size: 1rem; letter-spacing: 3px; display: block; margin-bottom: 4px; }
+.ph-rating-right-label { font-size: 0.82rem; color: var(--ink-40); line-height: 1.4; }
+
+/* BADGES STRIP */
+.badges-strip { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: clamp(32px,5vw,52px); }
+.rating-badge {
+  background: var(--white); border: 1px solid var(--border);
+  border-radius: var(--radius-xl); padding: 28px 30px;
+  display: flex; gap: 22px; align-items: center;
+  transition: box-shadow 0.3s;
+}
+.rating-badge:hover { box-shadow: 0 8px 32px rgba(15,25,35,0.08); }
+.rb-score { font-family: var(--font-display); font-size: 3.8rem; font-weight: 300; color: var(--ink); line-height: 1; letter-spacing: -0.03em; }
+.rb-info .stars { font-size: 0.85rem; letter-spacing: 2px; display: block; margin-bottom: 5px; }
+.rb-platform { font-size: 0.88rem; font-weight: 600; color: var(--ink); margin-bottom: 2px; }
+.rb-count { font-size: 0.78rem; color: var(--ink-40); }
+
+/* FEATURED */
+.featured-review {
+  background: var(--ink); border-radius: var(--radius-xl);
+  padding: clamp(36px,5vw,60px); position: relative; overflow: hidden;
+  margin-bottom: 24px;
+}
+.fr-quote-mark {
+  position: absolute; top: -20px; left: 28px;
+  font-family: var(--font-display); font-size: 14rem; font-weight: 300;
+  color: rgba(255,255,255,0.04); line-height: 1;
+  pointer-events: none; user-select: none;
+}
+.fr-stars { color: var(--teal); font-size: 1rem; letter-spacing: 3px; margin-bottom: 20px; position: relative; z-index: 1; }
+.fr-text {
+  font-family: var(--font-display);
+  font-size: clamp(1.2rem,2.5vw,1.65rem);
+  font-weight: 300; font-style: italic;
+  color: var(--white); line-height: 1.55;
+  margin-bottom: 24px; position: relative; z-index: 1;
+  max-width: 760px;
+}
+.fr-foot { display: flex; align-items: center; gap: 14px; position: relative; z-index: 1; }
+.fr-avatar { width: 42px; height: 42px; border-radius: 50%; background: rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-size: 1rem; color: rgba(255,255,255,0.7); }
+.fr-author { font-size: 0.85rem; font-weight: 500; color: rgba(255,255,255,0.8); }
+.fr-platform { font-size: 0.72rem; color: rgba(255,255,255,0.38); margin-top: 1px; }
+
+/* REVIEWS MASONRY-STYLE */
+.reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.review-card {
+  background: var(--white); border: 1px solid var(--border);
+  border-radius: var(--radius-lg); padding: 24px 26px;
+  display: flex; flex-direction: column;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.review-card:hover { box-shadow: 0 8px 28px rgba(15,25,35,0.08); transform: translateY(-2px); }
+.rc-stars-sm { color: var(--teal); font-size: 0.72rem; letter-spacing: 2px; margin-bottom: 12px; }
+.rc-quote { font-family: var(--font-display); font-size: 0.95rem; font-style: italic; color: var(--ink); line-height: 1.72; flex: 1; margin-bottom: 16px; }
+.rc-foot { display: flex; justify-content: space-between; align-items: center; padding-top: 14px; border-top: 1px solid var(--border); }
+.rc-author { font-size: 0.75rem; color: var(--ink-40); }
+.rc-platform { font-size: 0.65rem; font-weight: 600; letter-spacing: 0.05em; background: var(--ivory-dark); color: var(--ink-70); padding: 3px 10px; border-radius: 100px; }
+
+/* INVITE */
+.invite-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+.invite-left h2 { margin-bottom: 16px; }
+.invite-left p { color: var(--ink-70); font-size: 0.97rem; line-height: 1.78; margin-bottom: 28px; }
+.invite-btns { display: flex; flex-direction: column; gap: 12px; }
+.invite-btn {
+  display: flex; align-items: center; gap: 16px;
+  padding: 18px 22px; background: var(--white);
+  border: 1px solid var(--border); border-radius: var(--radius-lg);
+  text-decoration: none; transition: all 0.3s; cursor: pointer;
+}
+.invite-btn:hover { box-shadow: 0 8px 28px rgba(15,25,35,0.08); transform: translateY(-2px); border-color: var(--slate-soft); }
+.ib-icon { width: 44px; height: 44px; border-radius: 12px; background: var(--ivory-dark); display: flex; align-items: center; justify-content: center; font-size: 1.05rem; flex-shrink: 0; }
+.ib-label { font-size: 0.7rem; color: var(--ink-40); margin-bottom: 2px; text-transform: uppercase; letter-spacing: 0.07em; font-weight: 500; }
+.ib-name { font-size: 0.95rem; font-weight: 600; color: var(--ink); }
+.ib-stars { font-size: 0.65rem; color: var(--teal); letter-spacing: 1.5px; margin-top: 2px; }
+
+@media (max-width: 860px) {
+  .badges-strip { grid-template-columns: 1fr; }
+  .reviews-grid { grid-template-columns: repeat(2,1fr); }
+  .invite-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 580px) {
+  .reviews-grid { grid-template-columns: 1fr; }
+  .ph-rating { flex-wrap: wrap; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav scrolled" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">Studi Dentistici Marroccu<small>Odontoiatria · Cagliari</small></a>
+    <ul class="nav-links">
+      <li><a href="studio.html">Lo Studio</a></li>
+      <li><a href="team.html">Il Team</a></li>
+      <li><a href="trattamenti.html">Trattamenti</a></li>
+      <li><a href="recensioni.html" class="active">Recensioni</a></li>
+      <li><a href="contatti.html">Contatti</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="tel:3209114704" class="nav-tel show">320 911 4704</a>
+      <a href="prenota.html" class="btn btn--dark">Prenota <span class="btn-arrow">→</span></a>
+      <button class="nav-burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<div class="nav-mobile" id="navMobile">
+  <a href="studio.html">Lo Studio</a><a href="team.html">Il Team</a><a href="trattamenti.html">Trattamenti</a><a href="recensioni.html">Recensioni</a><a href="contatti.html">Contatti</a>
+  <div class="nav-mobile-cta">
+    <a href="tel:3209114704" class="btn btn--outline">📞 320 911 4704</a>
+    <a href="prenota.html" class="btn btn--dark">Prenota una visita →</a>
+  </div>
+</div>
+
+<div class="page-header">
+  <div class="wrap">
+    <div class="breadcrumb anim-up" data-delay="1"><a href="index.html">Home</a><span class="breadcrumb-sep">/</span><span>Recensioni</span></div>
+    <h1 class="anim-up" data-delay="2">La fiducia si costruisce<br><em class="display-italic">nel tempo</em></h1>
+    <p class="lead anim-up" data-delay="3" style="margin-top:20px;max-width:560px">Più di 136 valutazioni a cinque stelle su Google e MioDottore. Non è un numero da esibire: è la misura del lavoro fatto in quarant'anni, uno studio alla volta.</p>
+    <div class="badges-strip anim-up" data-delay="4">
+      <div class="rating-badge">
+        <div class="rb-score">5,0</div>
+        <div class="rb-info">
+          <span class="stars">★★★★★</span>
+          <div class="rb-platform">Google Maps</div>
+          <div class="rb-count">112 recensioni verificate · punteggio massimo</div>
+        </div>
+      </div>
+      <div class="rating-badge">
+        <div class="rb-score">5,0</div>
+        <div class="rb-info">
+          <span class="stars">★★★★★</span>
+          <div class="rb-platform">MioDottore</div>
+          <div class="rb-count">24 recensioni verificate · punteggio massimo</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FEATURED -->
+<section class="section">
+  <div class="wrap">
+    <div class="featured-review">
+      <div class="fr-quote-mark">"</div>
+      <div class="fr-stars">★★★★★</div>
+      <p class="fr-text">"Il Dott. Marroccu è il mio dentista da oltre dieci anni. In tutto questo tempo ho avuto modo di apprezzare la sua professionalità, la sua pazienza e il modo in cui riesce a mettere a proprio agio anche i pazienti più ansiosi. Uno studio in cui si torna volentieri."</p>
+      <div class="fr-foot">
+        <div class="fr-avatar">P</div>
+        <div>
+          <div class="fr-author">Paziente di lunga data</div>
+          <div class="fr-platform">Recensione Google verificata</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RECENSIONI GRID -->
+<section class="section section--ivory">
+  <div class="wrap">
+    <div class="section-head" style="margin-bottom:clamp(32px,5vw,48px)">
+      <span class="label">Voci dei pazienti</span>
+      <h2>Quello che ci scrivono</h2>
+      <p class="lead">Le recensioni mostrate sono rappresentative. Per tutte le recensioni verificate, visita la scheda Google Maps o MioDottore.</p>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card"><div class="rc-stars-sm">★★★★★</div><p class="rc-quote">"Professionalità eccellente e ambiente davvero accogliente. Mi sono sentita a mio agio fin dal primo momento."</p><div class="rc-foot"><span class="rc-author">Paziente verificata</span><span class="rc-platform">Google</span></div></div>
+      <div class="review-card"><div class="rc-stars-sm">★★★★★</div><p class="rc-quote">"Serietà, competenza e un approccio umano difficile da trovare. Lo studio è cresciuto, ma l'attenzione al paziente rimane la stessa."</p><div class="rc-foot"><span class="rc-author">Paziente verificato</span><span class="rc-platform">Google</span></div></div>
+      <div class="review-card"><div class="rc-stars-sm">★★★★★</div><p class="rc-quote">"Studio moderno, team molto preparato. Ho trovato finalmente un dentista di fiducia a Cagliari, con cui mi sento ascoltata."</p><div class="rc-foot"><span class="rc-author">Paziente verificata</span><span class="rc-platform">MioDottore</span></div></div>
+      <div class="review-card"><div class="rc-stars-sm">★★★★★</div><p class="rc-quote">"Il Dott. Marroccu spiega tutto con calma e non fa mai sentire a disagio. Finalmente ritrovata la serenità con il dentista."</p><div class="rc-foot"><span class="rc-author">Paziente verificato</span><span class="rc-platform">Google</span></div></div>
+      <div class="review-card"><div class="rc-stars-sm">★★★★★</div><p class="rc-quote">"Sono andata con mia figlia di otto anni. Lo staff è stato bravissimo, lei è uscita senza paure e ha chiesto quando si torna."</p><div class="rc-foot"><span class="rc-author">Paziente verificata</span><span class="rc-platform">Google</span></div></div>
+      <div class="review-card"><div class="rc-stars-sm">★★★★★</div><p class="rc-quote">"Professionalità vera, non quella da brochure. Ho trovato il dentista di cui avevo bisogno dopo essermi trasferita a Cagliari."</p><div class="rc-foot"><span class="rc-author">Paziente verificata</span><span class="rc-platform">MioDottore</span></div></div>
+      <div class="review-card"><div class="rc-stars-sm">★★★★★</div><p class="rc-quote">"Trattamento protesico eseguito con grande cura. Il risultato estetico è ottimo e la funzionalità è perfetta. Molto soddisfatto."</p><div class="rc-foot"><span class="rc-author">Paziente verificato</span><span class="rc-platform">Google</span></div></div>
+      <div class="review-card"><div class="rc-stars-sm">★★★★★</div><p class="rc-quote">"Nessuna sorpresa, nessuna pressione. Si sente che il paziente viene davvero rispettato e ascoltato in ogni fase."</p><div class="rc-foot"><span class="rc-author">Paziente verificato</span><span class="rc-platform">Google</span></div></div>
+      <div class="review-card"><div class="rc-stars-sm">★★★★★</div><p class="rc-quote">"Ho seguito il Dott. Marroccu da Carbonia fino a Cagliari. Studio storico, con tutto il bagaglio di esperienza che questo comporta."</p><div class="rc-foot"><span class="rc-author">Paziente verificato</span><span class="rc-platform">Google</span></div></div>
+    </div>
+    <p style="margin-top:20px;font-size:0.74rem;color:var(--ink-40);font-style:italic;text-align:center">⚠ Prima della pubblicazione, sostituire con recensioni testuali reali autorizzate o citate dalla scheda pubblica verificata.</p>
+  </div>
+</section>
+
+<!-- INVITA A RECENSIRE -->
+<section class="section">
+  <div class="wrap">
+    <div class="invite-grid">
+      <div class="invite-left">
+        <span class="label">Sei già nostro paziente?</span>
+        <h2>La tua opinione<br><em class="display-italic">conta per noi</em></h2>
+        <p>Se hai visitato il nostro studio e vuoi condividere la tua esperienza, ti invitiamo a lasciare una recensione. Ogni feedback è prezioso — e per i pazienti che ci cercano, la tua testimonianza può fare la differenza.</p>
+        <a href="prenota.html" class="btn btn--dark">Oppure prenota subito →</a>
+      </div>
+      <div class="invite-btns">
+        <a href="https://maps.google.com/?q=Studi+Dentistici+Marroccu+Cagliari" target="_blank" rel="noopener" class="invite-btn">
+          <div class="ib-icon">🗺️</div>
+          <div><div class="ib-label">Lascia una recensione su</div><div class="ib-name">Google Maps</div><div class="ib-stars">★★★★★</div></div>
+        </a>
+        <a href="https://www.miodottore.it" target="_blank" rel="noopener" class="invite-btn">
+          <div class="ib-icon">🩺</div>
+          <div><div class="ib-label">Lascia una recensione su</div><div class="ib-name">MioDottore</div><div class="ib-stars">★★★★★</div></div>
+        </a>
+        <div style="padding:16px 20px;background:var(--ivory);border-radius:var(--radius);border:1px solid var(--border);font-size:0.84rem;color:var(--ink-70);line-height:1.65">
+          Preferisci chiamarci? <a href="tel:3209114704" style="color:var(--slate-mid);text-decoration:none;font-weight:600">320 911 4704</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer"><div class="wrap"><div class="footer-grid"><div><div class="footer-brand">Studi Dentistici Marroccu</div><small class="footer-brand-sub">Odontoiatria · Cagliari · dal 1983</small><p class="footer-bio">Uno studio dentistico fondato nel 1983 in Sardegna. Professionalità, continuità e cura al servizio dei pazienti di Cagliari e del Sulcis Iglesiente.</p><div class="footer-social"><a href="#" class="footer-soc-btn">f</a><a href="#" class="footer-soc-btn">ig</a></div></div><div><div class="footer-col-title">Navigazione</div><ul class="footer-col-links"><li><a href="studio.html">Lo Studio</a></li><li><a href="team.html">Il Team</a></li><li><a href="trattamenti.html">Trattamenti</a></li><li><a href="recensioni.html">Recensioni</a></li><li><a href="prenota.html">Prenota</a></li><li><a href="contatti.html">Contatti</a></li></ul></div><div><div class="footer-col-title">Recapiti</div><div class="footer-contact-list"><div class="fci"><span class="fci-icon">📍</span><span>Viale Armando Diaz, 76<br>09125 Cagliari (CA)</span></div><div class="fci"><span class="fci-icon">📞</span><a href="tel:3209114704">320 911 4704</a></div><div class="fci"><span class="fci-icon">🕘</span><span>Da lunedì · ore 9:00</span></div><div class="fci"><span class="fci-icon">⭐</span><span>5,0 · 136 recensioni verificate</span></div></div></div></div><div class="footer-bottom"><span>© 2024 Studi Dentistici Marroccu · P.IVA da inserire</span><div class="footer-legal"><a href="privacy.html">Privacy Policy</a><a href="cookie.html">Cookie Policy</a><a href="#">Note legali</a></div></div></div></footer>
+
+<script>(function(){const nav=document.getElementById('nav');window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',window.scrollY>20),{passive:true});const burger=document.getElementById('burger'),mobile=document.getElementById('navMobile');burger.addEventListener('click',()=>{burger.classList.toggle('open');mobile.classList.toggle('open');document.body.style.overflow=mobile.classList.contains('open')?'hidden':'';});mobile.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{burger.classList.remove('open');mobile.classList.remove('open');document.body.style.overflow='';}));})();</script>
+</body></html>
+500">Contatti</a>.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-band">
+  <div class="wrap">
+    <div class="cta-inner">
+      <div>
+        <h2>Convinto? Prenota la tua visita.</h2>
+        <p>136 pazienti soddisfatti hanno già scelto lo Studio Marroccu. Il passo successivo è semplice.</p>
+      </div>
+      <a href="prenota.html" class="btn btn-warm">Prenota ora</a>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <svg style="height:34px;width:auto;opacity:.65" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 56">
+  <path d="M18 3C11 3 6 8 6 13c0 5 1.5 10 3 14 1.5 4 3 8 5 8s2-4 4-8c1 4 2 8 4 8s2.5-4 4-8c1.5-4 3-9 3-14C29 8 24 3 18 3z" fill="#2BBFBF"/>
+  <text x="38" y="28" font-family="Jost,sans-serif" font-size="19" font-weight="600" fill="rgba(255,255,255,.7)" letter-spacing=".3">marroccu</text>
+  <text x="38" y="42" font-family="Jost,sans-serif" font-size="10" font-weight="400" fill="#2BBFBF" letter-spacing="1.8">studi dentistici</text>
+</svg>
+        <p class="footer-desc">Oltre quarant'anni di storia in Sardegna. Professionalità, cura e continuità al servizio dei pazienti dal 1983.</p>
+        <div class="footer-socials"><a href="#" class="footer-social">f</a><a href="#" class="footer-social">ig</a></div>
+      </div>
+      <div>
+        <div class="footer-col-title">Navigazione</div>
+        <ul class="footer-links">
+          <li><a href="studio.html">Lo Studio</a></li><li><a href="team.html">Il Team</a></li>
+          <li><a href="trattamenti.html">Trattamenti</a></li><li><a href="recensioni.html">Recensioni</a></li>
+          <li><a href="prenota.html">Prenota</a></li><li><a href="contatti.html">Contatti</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Contatti</div>
+        <div class="footer-contacts-list">
+          <div class="fc-row"><span class="fc-ico">📍</span><span>Viale Armando Diaz, 76<br>09125 Cagliari (CA)</span></div>
+          <div class="fc-row"><span class="fc-ico">📞</span><a href="tel:3209114704">320 911 4704</a></div>
+          <div class="fc-row"><span class="fc-ico">🕘</span><span>Da lunedì · ore 9:00</span></div>
+          <div class="fc-row"><span class="fc-ico">⭐</span><span>5,0/5 · 136 recensioni</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2024 Studi Dentistici Marroccu · P.IVA da inserire</span>
+      <div class="footer-legal"><a href="privacy.html">Privacy Policy</a><a href="cookie.html">Cookie Policy</a><a href="#">Note legali</a></div>
+    </div>
+  </div>
+</footer>
+<script>
+function openMenu(){document.getElementById('mobileMenu').classList.add('open');document.body.style.overflow='hidden'}
+function closeMenu(){document.getElementById('mobileMenu').classList.remove('open');document.body.style.overflow=''}
+</script>
+</body>
+</html>

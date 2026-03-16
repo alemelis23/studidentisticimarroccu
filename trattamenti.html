@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Trattamenti odontoiatrici a Cagliari: conservativa, protesi, igiene, estetica, ortodonzia. Studio Dentistico Marroccu dal 1983.">
+<title>Trattamenti – Studio Dentistico Marroccu Cagliari</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --white:#FFFFFF;--off-white:#F8FAFA;
+  --teal:#2BBFBF;--teal-dark:#1AAFAF;--teal-pale:#E0F5F5;
+  --blue:#1A5F8A;--blue-dark:#0D3A5C;--blue-mid:#1A4A6E;--blue-pale:#E6F2F8;
+  --ink:#0D2D42;--ink-mid:#3A5268;--ink-light:#7A95A8;
+  --border:#D8E8EE;--border-light:#EBF3F7;
+  --r:12px;--r-lg:20px;--r-xl:32px;
+  --ease:cubic-bezier(.25,.46,.45,.94);--max:1160px;
+}
+html{scroll-behavior:smooth;font-size:16px;-webkit-text-size-adjust:100%}
+body{font-family:'Jost',sans-serif;color:var(--ink);background:var(--white);line-height:1.7;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:'Cormorant Garamond',serif;letter-spacing:-.01em}
+h1{font-size:clamp(2.4rem,6vw,4rem);font-weight:400;line-height:1.1;color:var(--ink)}
+h2{font-size:clamp(1.8rem,4vw,2.8rem);font-weight:400;line-height:1.14;color:var(--ink)}
+h3{font-size:clamp(1.1rem,2.5vw,1.45rem);font-weight:400;line-height:1.25;color:var(--ink)}
+.eyebrow{font-size:.68rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-light);display:block;margin-bottom:14px}
+section{padding:96px 0}
+.btn{display:inline-flex;align-items:center;gap:10px;font-family:'Jost',sans-serif;font-size:.78rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;transition:all .3s var(--ease);border:none;white-space:nowrap}
+.btn-dark{padding:13px 30px;background:var(--ink);color:var(--white);border-radius:2px}
+.btn-dark:hover{background:var(--blue);transform:translateY(-1px)}
+.btn-warm{padding:13px 30px;background:var(--teal);color:var(--white);border-radius:2px}
+.btn-warm:hover{background:#b8965a;transform:translateY(-1px)}
+.btn-ghost{padding:12px 28px;background:transparent;color:var(--ink);border:1px solid var(--border);border-radius:2px}
+.btn-ghost:hover{border-color:var(--ink);background:var(--ink);color:var(--white)}
+/* NAV */
+.nav{position:sticky;top:0;z-index:200;background:rgba(255,255,255,.97);border-bottom:1px solid var(--border-light);backdrop-filter:blur(12px)}
+.nav-inner{max-width:var(--max);margin:0 auto;padding:0 24px;height:68px;display:flex;align-items:center;justify-content:space-between}
+.nav-logo{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:400;color:var(--ink);letter-spacing:.02em;line-height:1.2}
+.nav-logo small{display:block;font-family:'Jost',sans-serif;font-size:.58rem;font-weight:400;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-light);margin-top:2px}
+.nav-links{display:flex;gap:32px;list-style:none}
+.nav-links a{font-size:.72rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-mid);transition:color .2s;position:relative;padding-bottom:3px}
+.nav-links a::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:var(--ink);transform:scaleX(0);transition:transform .25s var(--ease);transform-origin:left}
+.nav-links a:hover,.nav-links a.active{color:var(--ink)}
+.nav-links a:hover::after,.nav-links a.active::after{transform:scaleX(1)}
+.nav-actions{display:flex;align-items:center;gap:14px}
+.nav-tel{font-size:.72rem;font-weight:500;letter-spacing:.08em;color:var(--ink-mid);display:flex;align-items:center;gap:6px;transition:color .2s}
+.nav-tel:hover{color:var(--ink)}
+.btn-nav{padding:9px 20px;background:var(--ink);color:var(--white);border-radius:2px;font-size:.7rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;border:1px solid var(--ink);transition:all .2s}
+.btn-nav:hover{background:var(--blue)}
+.nav-hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:6px}
+.nav-hamburger span{width:22px;height:1px;background:var(--ink);display:block}
+.nav-mobile{display:none;position:fixed;inset:0;background:var(--ink);z-index:500;flex-direction:column;justify-content:center;align-items:center;gap:6px;padding:40px 24px}
+.nav-mobile.open{display:flex}
+.nav-mobile a{font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:300;color:rgba(255,255,255,.8);padding:10px 0;transition:color .2s;text-align:center}
+.nav-mobile a:hover{color:var(--white)}
+.nav-mobile-close{position:absolute;top:24px;right:24px;background:none;border:none;color:rgba(255,255,255,.5);font-size:1.4rem;cursor:pointer;line-height:1;padding:8px}
+.nav-mobile-tel{margin-top:32px;font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.3)}
+/* PAGE HERO */
+.page-hero{padding:72px 0 80px;border-bottom:1px solid var(--border-light)}
+.breadcrumb{display:flex;align-items:center;gap:8px;font-size:.65rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-light);margin-bottom:32px}
+.breadcrumb a:hover{color:var(--ink)}
+.breadcrumb-sep{color:var(--border)}
+.hero-2col{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:end}
+.hero-left p{font-size:.97rem;font-weight:300;color:var(--ink-mid);line-height:1.85;max-width:480px;margin-top:20px}
+/* TRATTAMENTI LISTA */
+.tratt-list{display:flex;flex-direction:column;gap:0;border-top:1px solid var(--border-light)}
+.tratt-item{display:grid;grid-template-columns:72px 1fr 1fr auto;gap:40px;align-items:start;padding:44px 0;border-bottom:1px solid var(--border-light);transition:background .3s;cursor:default}
+.tratt-item:hover{background:var(--off-white);margin:0 -24px;padding:44px 24px}
+.tratt-item-num{font-family:'Cormorant Garamond',serif;font-size:2.8rem;font-weight:300;color:var(--border);line-height:1;user-select:none;padding-top:4px}
+.tratt-item:hover .tratt-item-num{color:var(--border)}
+.tratt-item-name{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:400;color:var(--ink);line-height:1.2;padding-top:6px}
+.tratt-item-desc{font-size:.88rem;font-weight:300;color:var(--ink-mid);line-height:1.78;padding-top:6px}
+.tratt-item-cta{padding-top:10px;align-self:center}
+.tratt-link{font-size:.68rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-light);border-bottom:1px solid var(--border);padding-bottom:2px;transition:color .2s,border-color .2s;white-space:nowrap}
+.tratt-link:hover{color:var(--teal);border-color:var(--teal)}
+/* PRIMA VISITA */
+.pv-section{background:var(--off-white)}
+.pv-grid{display:grid;grid-template-columns:1fr 440px;gap:80px;align-items:start}
+.pv-steps{display:flex;flex-direction:column;gap:0;margin-top:36px}
+.pv-step{display:grid;grid-template-columns:48px 1fr;gap:24px;padding:28px 0;border-bottom:1px solid var(--border-light)}
+.pv-step:last-child{border-bottom:none}
+.pv-step-num{width:36px;height:36px;border-radius:50%;background:var(--ink);color:var(--white);display:flex;align-items:center;justify-content:center;font-size:.78rem;font-weight:500;flex-shrink:0;margin-top:3px}
+.pv-step-title{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:500;color:var(--ink);margin-bottom:8px;line-height:1.2}
+.pv-step-text{font-size:.87rem;font-weight:300;color:var(--ink-mid);line-height:1.7}
+.pv-card{background:var(--white);border:1px solid var(--border-light);border-radius:var(--r-lg);padding:36px;position:sticky;top:88px}
+.pv-card-title{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:400;color:var(--ink);margin-bottom:8px}
+.pv-card-sub{font-size:.82rem;font-weight:300;color:var(--ink-mid);line-height:1.65;margin-bottom:24px}
+.pv-checks{display:flex;flex-direction:column;gap:10px;margin-bottom:28px;padding-bottom:24px;border-bottom:1px solid var(--border-light)}
+.pvc-item{display:flex;gap:10px;font-size:.86rem;font-weight:300;color:var(--ink-mid);line-height:1.55}
+.pvc-dot{width:18px;height:18px;border-radius:50%;border:1px solid var(--teal);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;font-size:.6rem;color:var(--teal)}
+/* FAQ */
+.faq-section{}
+.faq-header{max-width:520px;margin-bottom:56px}
+.faq-list{display:flex;flex-direction:column;gap:0;border-top:1px solid var(--border-light)}
+.faq-item{border-bottom:1px solid var(--border-light)}
+.faq-q{width:100%;background:none;border:none;text-align:left;padding:24px 0;display:flex;align-items:center;justify-content:space-between;gap:20px;cursor:pointer;font-family:'Cormorant Garamond',serif;font-size:1.12rem;font-weight:400;color:var(--ink);line-height:1.3;transition:color .2s}
+.faq-q:hover{color:var(--teal)}
+.faq-q-icon{font-size:.7rem;color:var(--ink-light);flex-shrink:0;transition:transform .3s var(--ease);font-family:'Jost',sans-serif;font-weight:300;letter-spacing:.04em;min-width:20px;text-align:center}
+.faq-item.open .faq-q-icon{transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s var(--ease),padding .3s}
+.faq-item.open .faq-a{max-height:300px;padding-bottom:22px}
+.faq-a p{font-size:.9rem;font-weight:300;color:var(--ink-mid);line-height:1.82}
+/* CTA BAND */
+.cta-band{background:var(--ink);padding:72px 0}
+.cta-band-inner{display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap}
+.cta-band-inner h2{color:var(--white)}
+.cta-band-inner p{font-size:.92rem;font-weight:300;color:rgba(255,255,255,.55);max-width:400px;line-height:1.75;margin-top:10px}
+.cta-btns{display:flex;gap:12px;flex-wrap:wrap}
+/* FOOTER */
+.footer{background:var(--ink);color:rgba(255,255,255,.5);padding:72px 0 32px;border-top:1px solid rgba(255,255,255,.04)}
+.footer-top{display:grid;grid-template-columns:1.8fr 1fr 1fr;gap:60px;padding-bottom:56px;border-bottom:1px solid rgba(255,255,255,.06);margin-bottom:28px}
+.footer-brand{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:400;color:var(--white);margin-bottom:5px}
+.footer-brand-sub{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:18px;font-weight:400}
+.footer-desc{font-size:.82rem;font-weight:300;line-height:1.78;color:rgba(255,255,255,.4);max-width:280px;margin-bottom:24px}
+.footer-socials{display:flex;gap:8px}
+.footer-social{width:34px;height:34px;border-radius:4px;border:1px solid rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:500;color:rgba(255,255,255,.5);transition:all .25s}
+.footer-social:hover{background:rgba(43,191,191,.15);color:var(--teal);border-color:rgba(43,191,191,.3)}
+.footer-col-title{font-size:.6rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:20px}
+.footer-links{list-style:none;display:flex;flex-direction:column;gap:10px}
+.footer-links a{font-size:.83rem;font-weight:300;color:rgba(255,255,255,.5);transition:color .2s}
+.footer-links a:hover{color:var(--teal)}
+.footer-contacts-list{display:flex;flex-direction:column;gap:11px}
+.fc-row{display:flex;gap:10px;font-size:.81rem;font-weight:300;color:rgba(255,255,255,.5);line-height:1.5;align-items:flex-start}
+.fc-row a{color:inherit;transition:color .2s}
+.fc-row a:hover{color:var(--white)}
+.fc-ico{opacity:.4;min-width:14px;font-size:.82rem;margin-top:2px}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;font-size:.7rem;font-weight:300;color:rgba(255,255,255,.25)}
+.footer-legal{display:flex;gap:20px}
+.footer-legal a{color:rgba(255,255,255,.25);transition:color .2s}
+.footer-legal a:hover{color:rgba(255,255,255,.6)}
+@media(max-width:960px){
+  .hero-2col{grid-template-columns:1fr;gap:28px}
+  .tratt-item{grid-template-columns:48px 1fr;gap:20px}
+  .tratt-item-desc,.tratt-item-cta{grid-column:2}
+  .pv-grid{grid-template-columns:1fr}
+  .pv-card{position:static}
+  .footer-top{grid-template-columns:1fr;gap:32px}
+}
+@media(max-width:768px){
+  .nav-links,.nav-tel,.btn-nav{display:none}
+  .nav-hamburger{display:flex}
+  .tratt-item{grid-template-columns:1fr;gap:12px}
+  .tratt-item:hover{margin:0;padding:44px 0}
+  .tratt-item-num{font-size:2rem}
+  section{padding:64px 0}
+  .cta-band-inner{flex-direction:column;align-items:flex-start}
+}
+@media(max-width:600px){
+  .wrap{padding:0 18px}
+  section{padding:48px 0}
+  h1{font-size:2.1rem}
+  h2{font-size:1.75rem}
+  .footer-bottom{flex-direction:column;align-items:flex-start}
+  .footer-legal{flex-wrap:wrap;gap:12px}
+  .cta-btns{flex-direction:column}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html"><svg style="height:38px;width:auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 56">
+  <path d="M18 3C11 3 6 8 6 13c0 5 1.5 10 3 14 1.5 4 3 8 5 8s2-4 4-8c1 4 2 8 4 8s2.5-4 4-8c1.5-4 3-9 3-14C29 8 24 3 18 3z" fill="#2BBFBF"/>
+  <text x="38" y="28" font-family="Jost,sans-serif" font-size="19" font-weight="600" fill="#1A5F8A" letter-spacing=".3">marroccu</text>
+  <text x="38" y="42" font-family="Jost,sans-serif" font-size="10" font-weight="400" fill="#2BBFBF" letter-spacing="1.8">studi dentistici</text>
+</svg></a>
+    <ul class="nav-links">
+      <li><a href="studio.html">Lo Studio</a></li>
+      <li><a href="team.html">Il Team</a></li>
+      <li><a href="trattamenti.html" class="active">Trattamenti</a></li>
+      <li><a href="recensioni.html">Recensioni</a></li>
+      <li><a href="contatti.html">Contatti</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="tel:3209114704" class="nav-tel">📞 320 911 4704</a>
+      <a href="prenota.html" class="btn-nav">Prenota</a>
+      <button class="nav-hamburger" onclick="openMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<div class="nav-mobile" id="mobileMenu">
+  <button class="nav-mobile-close" onclick="closeMenu()">✕</button>
+  <a href="studio.html" onclick="closeMenu()">Lo Studio</a>
+  <a href="team.html" onclick="closeMenu()">Il Team</a>
+  <a href="trattamenti.html" onclick="closeMenu()">Trattamenti</a>
+  <a href="recensioni.html" onclick="closeMenu()">Recensioni</a>
+  <a href="contatti.html" onclick="closeMenu()">Contatti</a>
+  <a href="prenota.html" onclick="closeMenu()">Prenota</a>
+  <div class="nav-mobile-tel">320 911 4704</div>
+</div>
+
+<!-- HERO -->
+<div class="page-hero">
+  <div class="wrap">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a><span class="breadcrumb-sep">/</span><span>Trattamenti</span>
+    </div>
+    <div class="hero-2col">
+      <div class="hero-left">
+        <span class="eyebrow">I nostri trattamenti</span>
+        <h1>Odontoiatria completa per tutta la famiglia</h1>
+        <p>Una gamma completa di trattamenti, con un approccio attento alle esigenze individuali di ogni paziente. Per qualsiasi informazione, siamo disponibili a orientarti verso il percorso più adatto.</p>
+      </div>
+      <div style="padding-bottom:8px">
+        <p style="font-size:.82rem;font-weight:300;color:var(--ink-light);line-height:1.75;border-left:2px solid var(--border);padding-left:20px">Ogni trattamento nasce da un ascolto attento. Non proponiamo protocolli standard: valutiamo ogni situazione individualmente e costruiamo insieme un percorso su misura. La prima visita è il punto di partenza.</p>
+        <div style="margin-top:28px">
+          <a href="prenota.html" class="btn btn-dark">Prenota la prima visita</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TRATTAMENTI LISTA -->
+<section>
+  <div class="wrap">
+    <div class="tratt-list">
+      <div class="tratt-item">
+        <div class="tratt-item-num">01</div>
+        <div class="tratt-item-name">Odontoiatria conservativa</div>
+        <div class="tratt-item-desc">Cura e prevenzione delle carie, restauri in materiali compositi di ultima generazione, minimamente invasivi e durevoli nel tempo. L'obiettivo è preservare il dente naturale il più a lungo possibile, intervenendo con precisione e rispetto delle strutture sane.</div>
+        <div class="tratt-item-cta"><a href="prenota.html" class="tratt-link">Prenota →</a></div>
+      </div>
+      <div class="tratt-item">
+        <div class="tratt-item-num">02</div>
+        <div class="tratt-item-name">Protesi dentaria</div>
+        <div class="tratt-item-desc">Specializzazione storica dello studio dal 1983. Protesi fissa su denti naturali, protesi mobile totale e parziale, corone e ponti in ceramica. Ogni lavoro è personalizzato per restituire funzionalità masticatoria e naturalezza estetica nel rispetto delle caratteristiche individuali.</div>
+        <div class="tratt-item-cta"><a href="prenota.html" class="tratt-link">Consulenza →</a></div>
+      </div>
+      <div class="tratt-item">
+        <div class="tratt-item-num">03</div>
+        <div class="tratt-item-name">Igiene e prevenzione</div>
+        <div class="tratt-item-desc">Igiene professionale, ablazione del tartaro sopra e sottogengivale, lucidatura e profilassi. La prevenzione è il trattamento più efficace in odontoiatria: protegge denti e gengive a lungo termine e riduce drasticamente la necessità di interventi correttivi.</div>
+        <div class="tratt-item-cta"><a href="prenota.html" class="tratt-link">Prenota →</a></div>
+      </div>
+      <div class="tratt-item">
+        <div class="tratt-item-num">04</div>
+        <div class="tratt-item-name">Estetica dentale</div>
+        <div class="tratt-item-desc">Sbiancamento professionale in studio, faccette in ceramica o composito, rimodellamento estetico del sorriso. Il nostro approccio non insegue la perfezione artificiale: vogliamo che il risultato sembri davvero tuo, in armonia con il tuo viso e la tua personalità.</div>
+        <div class="tratt-item-cta"><a href="prenota.html" class="tratt-link">Consulenza →</a></div>
+      </div>
+      <div class="tratt-item">
+        <div class="tratt-item-num">05</div>
+        <div class="tratt-item-name">Ortodonzia</div>
+        <div class="tratt-item-desc">Trattamenti ortodontici per adulti e per i più giovani, con apparecchi fissi e removibili. Un sorriso ben allineato non è solo estetica: migliora la funzione masticatoria, facilita l'igiene orale e protegge la salute gengivale nel lungo periodo.</div>
+        <div class="tratt-item-cta"><a href="prenota.html" class="tratt-link">Valutazione →</a></div>
+      </div>
+      <div class="tratt-item">
+        <div class="tratt-item-num">06</div>
+        <div class="tratt-item-name">Prima visita</div>
+        <div class="tratt-item-desc">Un incontro, non un esame. La prima visita è il momento in cui ci conosciamo: ascoltiamo la tua storia clinica, valutiamo la situazione complessiva e proponiamo un piano di cura condiviso. Senza fretta, senza obblighi, senza linguaggio tecnico inutile.</div>
+        <div class="tratt-item-cta"><a href="prenota.html" class="tratt-link">Prenota →</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRIMA VISITA DETTAGLIO -->
+<section class="pv-section">
+  <div class="wrap">
+    <div class="pv-grid">
+      <div>
+        <span class="eyebrow">Come funziona</span>
+        <h2>La tua prima visita, passo per passo</h2>
+        <p style="font-size:.95rem;font-weight:300;color:var(--ink-mid);line-height:1.82;margin-top:16px;max-width:460px">Sappiamo che venire in uno studio dentistico nuovo può generare qualche incertezza. Ecco come si svolge concretamente il tuo primo appuntamento.</p>
+        <div class="pv-steps">
+          <div class="pv-step">
+            <div class="pv-step-num">1</div>
+            <div>
+              <div class="pv-step-title">Accoglienza e colloquio</div>
+              <p class="pv-step-text">Prima di qualsiasi esame, parliamo. Raccontiaci la tua storia clinica, le tue preoccupazioni, cosa ti aspetti dalla visita. È il passo più importante di tutti.</p>
+            </div>
+          </div>
+          <div class="pv-step">
+            <div class="pv-step-num">2</div>
+            <div>
+              <div class="pv-step-title">Valutazione clinica</div>
+              <p class="pv-step-text">Il medico esamina denti, gengive e tessuti molli. Se clinicamente necessario, si valuta la possibilità di radiografie diagnostiche per un quadro completo.</p>
+            </div>
+          </div>
+          <div class="pv-step">
+            <div class="pv-step-num">3</div>
+            <div>
+              <div class="pv-step-title">Spiegazione chiara</div>
+              <p class="pv-step-text">Ti spieghiamo con chiarezza cosa abbiamo trovato, cosa è urgente, cosa può aspettare e quali sono le opzioni disponibili. Nessun tecnicismo inutile.</p>
+            </div>
+          </div>
+          <div class="pv-step">
+            <div class="pv-step-num">4</div>
+            <div>
+              <div class="pv-step-title">Piano di cura condiviso</div>
+              <p class="pv-step-text">Costruiamo insieme un percorso personalizzato. Non si procede mai senza il tuo pieno consenso informato e la tua comprensione di ogni passaggio.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="pv-card">
+          <div class="pv-card-title">Perché scegliere lo Studio Marroccu?</div>
+          <p class="pv-card-sub">Alcune buone ragioni per fidarsi di noi come punto di partenza per la tua cura odontoiatrica.</p>
+          <div class="pv-checks">
+            <div class="pvc-item"><div class="pvc-dot">✓</div><span>Oltre 40 anni di esperienza clinica nel territorio sardo</span></div>
+            <div class="pvc-item"><div class="pvc-dot">✓</div><span>5,0 su Google con 112 recensioni verificate</span></div>
+            <div class="pvc-item"><div class="pvc-dot">✓</div><span>5,0 su MioDottore con 24 recensioni verificate</span></div>
+            <div class="pvc-item"><div class="pvc-dot">✓</div><span>Due medici con formazioni complementari</span></div>
+            <div class="pvc-item"><div class="pvc-dot">✓</div><span>Nessuna decisione senza il tuo consenso informato</span></div>
+            <div class="pvc-item"><div class="pvc-dot">✓</div><span>Approccio senza fretta, con ascolto reale</span></div>
+          </div>
+          <a href="prenota.html" class="btn btn-dark" style="width:100%;justify-content:center">Prenota la prima visita</a>
+          <p style="font-size:.72rem;font-weight:300;color:var(--ink-light);text-align:center;margin-top:12px">Oppure chiama il <a href="tel:3209114704" style="color:var(--teal)">320 911 4704</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section">
+  <div class="wrap">
+    <div class="faq-header">
+      <span class="eyebrow">Domande frequenti</span>
+      <h2>Quello che ci chiedono più spesso</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Devo fare una radiografia alla prima visita?
+          <span class="faq-q-icon">+</span>
+        </button>
+        <div class="faq-a"><p>Non necessariamente. La radiografia viene valutata caso per caso, solo se clinicamente necessaria per ottenere informazioni che l'esame visivo non può fornire. Non è una procedura automatica.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Con quanta frequenza dovrei fare l'igiene professionale?
+          <span class="faq-q-icon">+</span>
+        </button>
+        <div class="faq-a"><p>Per la maggior parte dei pazienti, una o due sedute all'anno sono sufficienti. La frequenza ideale varia in base alla situazione individuale — il medico ti indicherà quella più adatta a te dopo la prima valutazione.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Fate trattamenti per bambini?
+          <span class="faq-q-icon">+</span>
+        </button>
+        <div class="faq-a"><p>Sì. Lo studio accoglie pazienti di tutte le età, compresi bambini e adolescenti. La visita pediatrica include valutazione dello sviluppo dentale, prevenzione con sigillature e, dove necessario, orientamento ortodontico precoce.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Ho paura del dentista: come mi trattate?
+          <span class="faq-q-icon">+</span>
+        </button>
+        <div class="faq-a"><p>La paura del dentista è diffusissima e la prendiamo sul serio. In questo studio non si procede mai affrettatamente: ogni passo viene spiegato prima di essere eseguito, e il paziente può sempre segnalare disagio o chiedere una pausa. La fiducia si costruisce nel tempo.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          È possibile richiedere una seconda opinione su un preventivo già ricevuto?
+          <span class="faq-q-icon">+</span>
+        </button>
+        <div class="faq-a"><p>Assolutamente sì — è un diritto del paziente. Valutiamo la situazione clinica in modo indipendente e offriamo la nostra valutazione con la massima trasparenza, senza pressioni di alcun tipo.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Come gestite le urgenze odontoiatriche?
+          <span class="faq-q-icon">+</span>
+        </button>
+        <div class="faq-a"><p>In caso di urgenza — dolore acuto, trauma dentale, gonfiore — ti invitiamo a contattarci telefonicamente al 320 911 4704. Cerchiamo di gestire le urgenze nel minor tempo possibile, dando priorità alle situazioni che lo richiedono.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<div class="cta-band">
+  <div class="wrap">
+    <div class="cta-band-inner">
+      <div>
+        <h2>Hai ancora domande?</h2>
+        <p>Il modo migliore per capire qual è il trattamento giusto per te è parlarci. Prenota una prima visita o chiamaci direttamente.</p>
+      </div>
+      <div class="cta-btns">
+        <a href="prenota.html" class="btn btn-warm">Prenota una visita</a>
+        <a href="tel:3209114704" class="btn btn-ghost" style="color:rgba(255,255,255,.7);border-color:rgba(255,255,255,.2)">320 911 4704</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <svg style="height:34px;width:auto;opacity:.65" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 56">
+  <path d="M18 3C11 3 6 8 6 13c0 5 1.5 10 3 14 1.5 4 3 8 5 8s2-4 4-8c1 4 2 8 4 8s2.5-4 4-8c1.5-4 3-9 3-14C29 8 24 3 18 3z" fill="#2BBFBF"/>
+  <text x="38" y="28" font-family="Jost,sans-serif" font-size="19" font-weight="600" fill="rgba(255,255,255,.7)" letter-spacing=".3">marroccu</text>
+  <text x="38" y="42" font-family="Jost,sans-serif" font-size="10" font-weight="400" fill="#2BBFBF" letter-spacing="1.8">studi dentistici</text>
+</svg>
+        <p class="footer-desc">Uno studio dentistico con oltre quarant'anni di storia in Sardegna. Professionalità, cura e continuità al servizio dei pazienti dal 1983.</p>
+        <div class="footer-socials"><a href="#" class="footer-social">f</a><a href="#" class="footer-social">ig</a></div>
+      </div>
+      <div>
+        <div class="footer-col-title">Navigazione</div>
+        <ul class="footer-links">
+          <li><a href="studio.html">Lo Studio</a></li><li><a href="team.html">Il Team</a></li>
+          <li><a href="trattamenti.html">Trattamenti</a></li><li><a href="recensioni.html">Recensioni</a></li>
+          <li><a href="prenota.html">Prenota</a></li><li><a href="contatti.html">Contatti</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Contatti</div>
+        <div class="footer-contacts-list">
+          <div class="fc-row"><span class="fc-ico">📍</span><span>Viale Armando Diaz, 76<br>09125 Cagliari (CA)</span></div>
+          <div class="fc-row"><span class="fc-ico">📞</span><a href="tel:3209114704">320 911 4704</a></div>
+          <div class="fc-row"><span class="fc-ico">🕘</span><span>Da lunedì · ore 9:00</span></div>
+          <div class="fc-row"><span class="fc-ico">⭐</span><span>5,0/5 · 136 recensioni verificate</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2024 Studi Dentistici Marroccu · P.IVA da inserire</span>
+      <div class="footer-legal"><a href="privacy.html">Privacy Policy</a><a href="cookie.html">Cookie Policy</a><a href="#">Note legali</a></div>
+    </div>
+  </div>
+</footer>
+
+<script>
+function openMenu(){document.getElementById('mobileMenu').classList.add('open');document.body.style.overflow='hidden'}
+function closeMenu(){document.getElementById('mobileMenu').classList.remove('open');document.body.style.overflow=''}
+function toggleFaq(btn){
+  const item=btn.parentElement;
+  const isOpen=item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(el=>el.classList.remove('open'));
+  if(!isOpen)item.classList.add('open');
+}
+</script>
+</body>
+</html>
